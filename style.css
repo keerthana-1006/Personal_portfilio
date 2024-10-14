@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6; /* Balanced spacing for readability */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header Styles */
+header {
+    background-color: #a67b5b;
+    color: white;
+    padding: 10px 0; /* Reduced padding for a sleeker header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjusted spacing between links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Slight spacing for clarity */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 70px;
+    text-align: center;
+    background-color: #f5e6ca;
+    color: #a67b5b;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about .content-section {
+    text-align: center; /* Center-align the about section */
+}
+
+.about-content img {
+    border-radius: 50%;
+    max-width: 140px;
+    margin-bottom: 15px;
+    border: 4px solid #a67b5b;
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.05);
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* General Content Section */
+.content-section {
+    padding: 40px 20px; /* Adjusted padding */
+    text-align: left; /* Left-aligned by default */
+    background-color: #fff7e6;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px; /* Narrower for better readability */
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #a67b5b;
+    text-align: center; /* Centered section headings */
+}
+
+.content-section h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #f4a261;
+    display: block;
+    margin: 5px auto 0; /* Centered underline */
+}
+
+.content-section h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #a67b5b;
+    font-weight: bold;
+}
+
+.content-section p {
+    margin: 5px 0;
+    font-size: 1rem; /* Reduced font size for better readability */
+}
+
+/* List Styles */
+.content-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.content-section ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #a67b5b;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #f9f5e9;
+    padding: 50px;
+}
+
+.about-content {
+    text-align: center; /* Center-align all content */
+    background-color: #fdf8ec;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for a refined look */
+    max-width: 600px;
+    width: 100%; /* Makes the section responsive */
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #8a5e3d;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the heading */
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8a5e3d;
+    margin: 20px 0; /* Adds spacing above and below the image */
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
